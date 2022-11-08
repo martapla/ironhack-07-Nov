@@ -1,0 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+.external-css-font-file {
+    font-family: "Roboto",sans-serif;
+    font-size: 18px;
+}
+
+.ext-google-link-inside-html {
+    font-family:'Merriweather', serif;
+    font-weight: 300px;
+}
+
+.external-3 {
+    font-family: 'Montserrat', sans-serif;
+    color:#214a3d;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
