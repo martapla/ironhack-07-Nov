@@ -9,29 +9,38 @@ White: #FFF
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;600&display=swap');
 
 * {
-    border: 1px solid red;
-    margin:0 auto;
-    padding:0px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    outline: 1px solid red;
+    /* podem posar border(incluye padding) o outline */
+    margin:0 ;
+    padding:0;
 }
 
 body {
     font-family: 'Inter', sans-serif;
+   
 }
 .navbar {
     background-color: #FFF;
     display: flex;
     justify-content:space-between;
     align-items: center;
+    position: fixed;
+    /* z-index: 999; */
+    /* width:100vw; */
+    width:100%;
  }
 
 .logo {
     width: 150px;
     padding: 10px;
+    padding-left: 20px;
 }
 header nav {
     width:400px;
+    padding-right: 30px;
 }
-
 header nav a {
     text-decoration: none; 
 }
@@ -98,15 +107,35 @@ header nav ul{
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    margin-bottom: 70px;;
+    margin-bottom: 70px;
+    padding: 0px 50px;
 }
 
 #kanye {
+    height:600px;
     background-color:#00B172 ;
+     display: flex;
+     flex-direction: row; 
+     align-items: center;
+    
+
 }
+.text {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width:450px;
+    
+}   
+.options {
+    margin: 20px;
+}
+
 #kanye h1 {
     color: white;
-    text-decoration: underline white 4px;
+    /* text-decoration: underline white 4px; */
+    border-bottom: #FFF solid 4px;
+    margin: 20px;
 }
 .options h2 {
     color: white;
@@ -120,6 +149,14 @@ header nav ul{
 .app {
     width:300px;
 }
+.images {
+    width:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* Exemple javascript */
+.javascript-example
 
 
 

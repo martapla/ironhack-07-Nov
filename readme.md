@@ -6,6 +6,8 @@
   ⚡Css : Basics
 ### Notes from Nov 09 
   ⚡Css : Font & Text Properties, Boxes, PseudoClasses, Forms, Floats.
+### Notes from Nov 10
+  ⚡Css : Position, Mediqueries, Flexbox.
 
 
 
