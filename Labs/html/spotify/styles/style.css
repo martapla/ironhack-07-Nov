@@ -11,7 +11,7 @@ White: #FFF
 * {
     box-sizing: border-box;
     /* border: 1px solid red; */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     /* podem posar border(incluye padding) o outline */
     margin:0 ;
     padding:0;
@@ -21,6 +21,8 @@ body {
     font-family: 'Inter', sans-serif;
    
 }
+/* Header */
+
 .navbar {
     background-color: #FFF;
     display: flex;
@@ -30,7 +32,7 @@ body {
     /* z-index: 999; */
     /* width:100vw; */
     width:100%;
- }
+}
 
 .logo {
     width: 150px;
@@ -73,14 +75,15 @@ header nav ul{
     text-align: center;
     font-size: 20px;
 }
+/* Section 1 */
+
 #whatson h1{
-    margin-top:30px;
-    margin-bottom: 60px;
+    margin: 30px 350px 60px ;
+    width: 30%;
     color: black;
     text-align: center;
     font-size: 30px;
-    /* border-bottom: 3px solid #00B172; */
-    text-decoration: underline #00B172 4px;
+    border-bottom: #00B172 solid 4px;
 }
 .box {
     height: 200px;
@@ -111,18 +114,21 @@ header nav ul{
     padding: 0px 50px;
 }
 
+/* Section 2 */
+
 #kanye {
     height:600px;
+    width:100%;
     background-color:#00B172 ;
-     display: flex;
-     flex-direction: row; 
-     align-items: center;
-    
-
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
 }
+
 .text {
     display: flex;
     flex-direction: column;
+    align-items: space-between ;
     margin: 20px;
     width:450px;
     
@@ -150,14 +156,13 @@ header nav ul{
     width:300px;
 }
 .images {
-    width:100px;
+    width:450px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
 }
-/* Exemple javascript */
-.javascript-example
-
 
 
 
