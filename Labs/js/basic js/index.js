@@ -1,9 +1,9 @@
 // Iteration 1: Names and Input
 
-const hacker1 = "driver's name";
+const hacker1 = "Maria";
 console.log(`The driver's name is ${hacker1}`);
 
-const hacker2 = "navigator's name";
+const hacker2 = "Marc";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -11,10 +11,10 @@ if (hacker1.length > hacker2.length) {
     console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
 
 } else if (hacker2.length > hacker1.length) {
-    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length}characters.`);
+    console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 
 } else if ((hacker1.length === hacker2.length)) {
-     console.log(`Wow, you both have equally long names, ${hacker1.length}  characters!.`);
+     console.log(`Wow, you both have equally long names, ${hacker1.length}   characters!.`);
 }
 
 
@@ -27,8 +27,8 @@ if (hacker1.length > hacker2.length) {
 // [:""] si no, se ejecuta este
 
 hacker1.length > hacker2.length
-    ? console.log(`The driver has the longest name, it has ${hacker1.length} characters.`)
-    : console.log(`It seems that the navigator has the longest name, it has ${hacker2.length}characters.`);
+    ? console.log(`The driver has the longest name, it has ${hacker1.length}  characters.`)
+    : console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 
 
 hacker1.length > hacker2.length
@@ -41,7 +41,7 @@ hacker1.length > hacker2.length
         `Wow, you both have equally long names, ${hacker1.length}  characters!.`)
 
     : console.log(
-        `It seems that the navigator has the longest name, it has ${hacker2.length}characters.`
+        `It seems that the navigator has the longest name, it has ${hacker2.length} characters.`
     );
 
 
@@ -69,50 +69,65 @@ let reverseName = " ";
 for (let i = hacker1.length - 1; i >= 0; i--){
     reverseName += hacker1[i];
 }
-console.log(reservedName);
+console.log(reverseName);
 
 // Iteration 3.2 - Usando metodo nativo
 const reverseNameSimplified = hacker1.split("").reverse().join("");
 console.log(reverseNameSimplified);
 
-//Iteration 3.3 
-//Declarar funcion
-//Syntax
-
-function ordenLexicoGrafico(string1, string2) {
+// ITERATION 3 - Reverse Order
+//Iteration 3.3 - Condicional sencillo
+if (hacker1 > hacker2) {
+    console.log("The driver's name goes first.");
+  } else if (hacker1 < hacker2) {
+    console.log("Yo, the navigator goes first definitely.");
+  } else {
+    console.log("What?! You both have the same name?");
+  }
+  
+  //Iteration 3.3 - Condicional sencillo dentro de una funcion :)
+  //Declarar una función
+  // SYNTAX
+  // function nameOfFunction() {
+  //     // function body
+  // }
+  // nameOfFunction()
+  
+  function ordenLexicoGrafico(string1, string2) {
     if (string1 > string2) {
-        console.log("Drivers go first");
+      console.log("The driver's name goes first.");
     } else if (string1 < string2) {
-        console.log("Navigator go first");
+      console.log("Yo, the navigator goes first definitely.");
     } else {
-        console.log("Both go first");
+      console.log("What?! You both have the same name?");
     }
-}
-ordenLexicoGrafico(hacker1, hacker2);
+  }
+  ordenLexicoGrafico(hacker1, hacker2);
+  console.log("-------------------");
+  
+// BONUS TIME
+// BONUS 1 - LOREM IPSUM "ET" FINDER
 
-//Bonus Exercise
-
-let lorem = "Lorem  et ja jagdy fhddj hjfyff";
+let lorem =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis ad voluptatum beatae quisquam autem nisi ullam nihil a veniam nam pariatur dolores temporibus animi atque, quidem sapiente veritatis quae adipi et";
 
 // trimmear todos los blank spaces
-
 let trimmedLorem = lorem.trim();
 
-//contar la cantidad de palabras
-
+// contar la cantidad de palabras
 let etCount = 0;
-
 for (key of trimmedLorem) {
-    if (key === " et ") etCount += 1;
+  if (key === " et ") etCount += 1;
 }
 console.log(`La cantidad de palabras et: ${etCount + 1}`);
 
-// BONUS 2
+// BONUS 2 - SPLIT & REVERSE
+let phraseToCheck = "amor roma";
+let phraseToCheckPalindrome = phraseToCheck.split("").reverse().join("");
 
-let text = " amor,roma";
-let backWards = "";
-
-for (let i = text.length - 1; i > 0; i--){
-    backWards += text[i]
+if (phraseToCheck.toLowerCase() == phraseToCheckPalindrome.toLowerCase()) {
+  console.log("THE STRING IS A PALINDROME");
+} else {
+  console.log("THE STRING IS NOT A PALINDROME");
 }
-if(text.toLowerCase)
+console.log(phraseToCheckPalindrome);
