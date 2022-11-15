@@ -12,3 +12,6 @@
 ***Notes from Nov 11*** ⚡ Css : Grid Layout ⚡
 
 ***Notes from Nov 14*** ⚡ JavaScript : Intro, DataTypes, Operators, Conditionals ⚡
+
+***Notes from Nov 15*** ⚡ JavaScript : Functions, Loops, Array Methods ⚡
+
