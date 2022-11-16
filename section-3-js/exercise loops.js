@@ -37,9 +37,27 @@ array3.unshift("white");
 
 console.log(array3);*/
 
-// Amb funcions: //no esta bé
+
+
+// Amb funcions: CORRECTE!!!
 
 let array3 = ["blue", "red", "green"];
+let element1 = "pink";
+let element2 =  "black";
+
+function colors(list,col1,col2) {
+    list.push(col1);
+    list.unshift(col2);
+    return list;
+}
+
+console.log(colors(array3, element1, element2));  // black,blue,red,green,pink
+console.log(colors(array3, "orange", element2));  // black,blue,red,green,pink,orange
+
+
+//També:
+
+/*let array3 = ["blue", "red", "green"];
 let element1 = "pink";
 let element2 =  "black";
 
@@ -49,6 +67,9 @@ function colors(list) {
     return list;
 }
 
-console.log(colors);
+console.log(colors(array3));
+*/
+
+
 
 
