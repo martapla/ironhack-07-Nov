@@ -1,5 +1,6 @@
 // ------Iteration #1: Find the maximum----- //
-function maxOfTwoNumbers(num1,num2) {
+function maxOfTwoNumbers(num1, num2) {
+  
 
   if (num1 == num2) {
     return num1;
@@ -22,8 +23,9 @@ function maxOfTwoNumbersIf(num1, num2) {
   if (num2 > num1) result = num2;
 
   return result;
- }
   */
+ 
+ 
 
 
 // ------Iteration #2: Find longest word----- //
@@ -61,7 +63,9 @@ words.forEach(element => {
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(sumArray) {
-  let suma = 0;
+
+  let suma = 0; //Declare variable to save the total sum
+
   for (let i = 0; i < sumArray.length; i++){
     suma = suma + sumArray[i]; // suma +=sumarray[i]
   }
@@ -84,18 +88,29 @@ function sumNumbers(sumArray) {
 
 
 // -----Iteration #3.1 Bonus:------ //
-function sum(arraySum) {
-  let result = 0;
+const mixedArr = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
+function sum(array) {
+  let mixedSum = 0;
 
-  arraySum.forEach(element => {
-    result += element;
-  });
-
-  if (arraySum.length == 0) result = 0;
-  return result;
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] === "string") {
+      str = array[i].split("");
+      for (let i = 0; i < str.length; i++) {
+        mixedSum += str[i].length;
+      }
+    } else if (array[i] === true) {
+      mixedSum += 1;
+    } else {
+      mixedSum += array[i];
+    }
+  }
+  return mixedSum;
 }
-
-//
+console.log(
+  ` La suma de este array generico es de un total de: ${sum(
+    mixedArr
+  )}`
+);
 
 
 
@@ -116,14 +131,33 @@ console.log("Version 2");
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(wordsArr) {
+  if (wordsArr.length === 0) return null;
+  let total = 0;
+  for (let i = 0; i < wordsArr.length; i++) {
+    total += wordsArr[i].length;
+  }
+  return total / wordsArr.length;
+}
+console.log(`- Iteration #4.2: Array of strings - "`);
+console.log(
+  `La media de palabras en este array es: ${averageWordLength(wordsArr)}`
+);
 
 
 
 
 // Bonus - Iteration #4.1
 
-function avg() { }
+const mixedArr2 = [6, 12, "miami", 1, true, "barca", "200", "lisboa", 8, 10];
+function avg(array) {
+  return sum(array) / array.length;
+}
+console.log(`La media de este mixed array seria de: ${avg(mixedArr2)}`);
+console.log(`- Iteration 4.1 - V2  "`);
+const avg2 = (arr) => (!arr.length ? null : sum(arr) / arr.length);
+console.log(`La media de este mixed array seria de: ${avg2(mixedArr2)}`);
+
 
 
 
