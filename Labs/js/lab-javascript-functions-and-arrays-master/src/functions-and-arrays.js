@@ -7,13 +7,13 @@ function maxOfTwoNumbers(num1,num2) {
     console.log(`the bigger number is number 1 which is : ${num1}`);
   } else {
     console.log (`the bigger number is number 2 which is : ${num2}`)
-  };
+  }
 
   //Version 2 
   //return Math.max (num1,num2);
 }
 maxOfTwoNumbers(8, 10);
-console.log(maxOfTwoNumbers);
+
 //
 /*
 function maxOfTwoNumbersIf(num1, num2) {
