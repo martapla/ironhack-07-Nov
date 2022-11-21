@@ -78,7 +78,7 @@ fetch(url)
     // gestionamos la respuesta
   })
   .catch((erro) => {
-    // gestionamos los erroes
+    // gestionamos los errores
   });
 
 // Cuando la solicitud se completa, el recurso está disponible. En este momento, la promesa se resolverá en un objeto Response.
