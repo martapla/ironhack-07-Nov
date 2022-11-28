@@ -20,3 +20,7 @@
 ***Nov 17***   JavaScript :  DOM Manipulation - Browser Events
 
 ***Nov 18***   JavaScript :  Callbacks - Promises - Async/Await
+
+***Nov 28***   Vue :  Basics - Components - SetUp
+
+
