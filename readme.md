@@ -21,6 +21,8 @@
 
 ***Nov 18***   JavaScript :  Callbacks - Promises - Async/Await
 
-***Nov 28***   Vue :  Basics - Components - SetUp
+***Nov 28***   🎠 Vue 🎠 Intro - Components - TextInterpolation - Text/Html Directive - Atribute:Binding
+
+***Nov 29***   Vue : Conditional Rendering - Iterating Elements - Exercises
 
 
