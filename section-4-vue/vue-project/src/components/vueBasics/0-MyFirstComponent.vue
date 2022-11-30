@@ -34,7 +34,7 @@
   import TextDirective from "./2-TextDirective.vue";
   import HtmlDirective from "./3-HtmlDirective.vue";
   // Vamos a decalrar variables que contengan el metodo dentro para poder trabajar correctamente datos que sean reactivos:)
-  const diego = 0;
+  //const diego = 0;
   // Primitive Data Types
   const cityOfBirth = ref("valencia");
   const age = ref(31);

@@ -51,7 +51,7 @@ const favs = reactive([
      favoriteArrayMethod = "sort",
 ])
 
-//Ex.3
+
 
 
 </script>

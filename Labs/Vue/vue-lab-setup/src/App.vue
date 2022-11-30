@@ -1,19 +1,20 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import NewComponent from './components/NewComponent.vue';
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+   
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      
       <HelloWorld msg="Lab Vue 001 - Vue Setup" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/new">Component</RouterLink>
       </nav>
     </div>
   </header>
