@@ -25,4 +25,7 @@
 
 ***Nov 29***   Vue : Conditional Rendering - Iterating Elements - Exercises
 
+***Nov 30***   Vue : V-model- Computed() - Slots - Props - Exercises
+
+
 
