@@ -27,5 +27,8 @@
 
 ***Nov 30***   Vue : V-model- Computed() - Slots - Props - Exercises
 
+***Dec 01***   Vue : Methods - ComputedProps - TwoWayData - Exercises
+
+
 
 
