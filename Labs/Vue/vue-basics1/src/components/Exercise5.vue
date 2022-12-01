@@ -4,43 +4,59 @@ Al button le asignamos un directivo de evento mediante su @ y le asingmaos un ev
 
 
 <template>
-
-  <h1>Boolean Exercise</h1>
-
-  <div :class = " isTrue ? 'miClase1' : 'miClase2'" >
-     <h1>Clase</h1>
-     <button @click="clase">clickMe</button>
-  </div>
-
-</template>
-
-<script setup>
-import { ref } from "vue";
-
-const miClase1 = ref(false)
-const miClase2 = ref(true)
-
-const clase = () => {
-    miClase1.value = !miClase1.value;
-    console.log(miClase2.value)
-}
-
-</script>
-
-<style>
-.container {
-    height:5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.is-red {
-    background-color: red;
-}
-.is-green {
-    background-color: darkgreen;
-}
-
-</style>
+    <div>
+      <hr />
+      <h1>Exercise 5 | Bonus</h1>
+    
+      <div class="container" :class="colorBoolean ? 'is-green' : 'is-orange'">
+        <h3>Toggleamos entre 2 colores con operador ternario</h3>
+        <button @click="changeColorFunction()">Click me to toogle color</button>
+      </div>
+    
+      <div class="container" :class="colorChange ? 'mi-clase-1' : 'mi-clase-2'" >
+        <h3>Toggleamos entre 2 colores con operador ternario</h3>
+        <button @click="changeColorFunction1()">Click me to change color</button>
+    
+      </div>
+    
+    </div>
+    </template>
+    
+    <script setup>
+    import {ref, reactive} from "vue";
+    const colorBoolean = ref (true);
+    const changeColorFunction = () => {
+        colorBoolean.value = !colorBoolean.value
+    };
+    const colorChange = ref (false);
+    const changeColorFunction1 = () => {
+        colorChange.value = !colorChange.value
+    };
+    </script>
+    
+    <style scoped>
+    h2 {
+      text-decoration: underline;
+    }
+    h3{
+        color: #fafafa
+    }
+    .container{
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .is-green{
+        background: green;
+    }
+    .is-orange{
+        background: orange;
+    }
+    .mi-clase-1{
+        background: blue;
+    }
+    .mi-clase-2{
+        background: grey;
+    }
+    </style>
