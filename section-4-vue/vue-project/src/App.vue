@@ -5,15 +5,18 @@ import TextDirective from "./components/vueBasics/2-TextDirective.vue";
 import HtmlDirective from "./components/vueBasics/3-HtmlDirective.vue";
 import AttributeBinding from "./components/vueBasics/4-attribute-binding.vue";
 import ConditionalRendering from "./components/vueBasics/5-ConditionalRendering.vue";
-import IteratingElements from "./components/vueBasics/7-IteratingElements.vue";
+import IteratingElements from "./components/vueBasics/6-IteratingElements.vue";
+import ExerciseCompProp from "./components/vueBasics/ExerciseCompProp.vue";
 import ExerciseSlotVue from "./components/vueBasics/ExerciseSlot.vue";
 import ExerciseSlot2Vue from "./components/vueBasics/ExerciseSlot2.vue";
+import ExerciseCompPropVue from "./components/vueBasics/ExerciseCompProp.vue";
+import ExerciseTwoWayVue from "./components/vueBasics/ExerciseTwoWay.vue";
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Vue Basics Class" />
+      <HelloWorld msg="Vue Basics Classes" />
     </div>
   </header>
 
@@ -27,9 +30,8 @@ import ExerciseSlot2Vue from "./components/vueBasics/ExerciseSlot2.vue";
     <AttributeBinding /> -->
     <!-- <hr />
     <ConditionalRendering /> -->
-    <hr />
-    <ExerciseSlotVue />
-    <ExerciseSlot2Vue />
+    <ExerciseTwoWayVue/>
+    
   </main>
 </template>
 
