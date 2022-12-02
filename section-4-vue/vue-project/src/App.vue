@@ -11,6 +11,10 @@ import ExerciseSlotVue from "./components/vueBasics/ExerciseSlot.vue";
 import ExerciseSlot2Vue from "./components/vueBasics/ExerciseSlot2.vue";
 import ExerciseCompPropVue from "./components/vueBasics/ExerciseCompProp.vue";
 import ExerciseTwoWayVue from "./components/vueBasics/ExerciseTwoWay.vue";
+import Watchers from "./components/vueBasics/10-Watchers.vue";
+import ExerciseWatchers from "./components/vueBasics/ExerciseWatchers.vue";
+
+
 </script>
 
 <template>
@@ -30,7 +34,7 @@ import ExerciseTwoWayVue from "./components/vueBasics/ExerciseTwoWay.vue";
     <AttributeBinding /> -->
     <!-- <hr />
     <ConditionalRendering /> -->
-    <ExerciseTwoWayVue/>
+    <ExerciseWatchers />
     
   </main>
 </template>
