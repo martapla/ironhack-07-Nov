@@ -8,9 +8,9 @@ Cuando se envíe el formulario imprimiremos la info que se ha mandado con una al
 
 <template>
 <div id="myForm">  
-    <h1>Form Exercise</h1>
+    <h1> Primavera Sound Form </h1>
       <div id="form-v-model-visibilidad">
-        <pre>{{ JSON.stringify(formValues, null, 1) }}</pre>
+        <!-- <pre>{{ JSON.stringify(formValues, null, 1) }}</pre> -->
       </div>
 
       <!-- //Name Input -->
@@ -218,13 +218,43 @@ const formValues = reactive({
     suggestions: "",
 });
 function submitForm() {
-    console.log("Form Values", formValues);
-    alert( "Form Values",formValues);
-}
+   
+  alert(`
 
+  Thank you for your details!!!
+
+  Name: ${formValues.formName}
+  Email: ${formValues.email}
+  Artists:${formValues.artists}
+  Habits: ${formValues.badHabits ? "stay hidrated!" : "drink water!"}
+  Dress in Black?: ${formValues.dressCode}
+  Older than 21?: ${formValues.age}
+  More than 2 friends?: ${formValues.quantityFriends}
+  Suggestions for the festival:${formValues.suggestions}
+  
+  `);
+
+}
 
 </script>
 
-<style>
 
+<style scoped>
+pre {
+  font-size: 24px;
+}
+div {
+  display: flex;
+  flex-direction: column;
+}
+.multiple-checkboxes {
+  display: flex;
+  flex-direction: row;
+}
+.form-class-container {
+  min-width: 75%;
+}
+label {
+  font-size: 1rem;
+}
 </style>
