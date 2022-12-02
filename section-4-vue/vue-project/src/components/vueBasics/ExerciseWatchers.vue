@@ -32,7 +32,7 @@ watch(answer2, async (newAnswer) => {
     if (answer2.value === "yes") {
         jsonResponse.value = jsonAnswer[0].response + " ,te encanta la pizza!"
     }
-    else if ()
+    //else if ()
 })
  
 </script>

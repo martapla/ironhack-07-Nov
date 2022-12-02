@@ -13,6 +13,8 @@ import ExerciseCompPropVue from "./components/vueBasics/ExerciseCompProp.vue";
 import ExerciseTwoWayVue from "./components/vueBasics/ExerciseTwoWay.vue";
 import Watchers from "./components/vueBasics/10-Watchers.vue";
 import ExerciseWatchers from "./components/vueBasics/ExerciseWatchers.vue";
+import ExerciseEventVue from "./components/vueBasics/ExerciseEvent.vue";
+import ExerciseEventChildVue from "./components/vueBasics/ExerciseEventChild.vue";
 
 
 </script>
@@ -32,9 +34,9 @@ import ExerciseWatchers from "./components/vueBasics/ExerciseWatchers.vue";
     <!-- <HtmlDirective /> -->
     <!-- <hr />
     <AttributeBinding /> -->
-    <!-- <hr />
-    <ConditionalRendering /> -->
-    <ExerciseWatchers />
+    <!-- <hr />-->
+    <ExerciseEventVue /> 
+    <ExerciseEventChildVue />
     
   </main>
 </template>
