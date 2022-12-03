@@ -22,22 +22,16 @@ import ExerciseEventChildVue from "./components/vueBasics/ExerciseEventChild.vue
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="Vue Basics Classes" />
+      <HelloWorld msg="Vue Lessons" />
     </div>
   </header>
 
   <main>
-    <!-- <MyFirstComponent /> -->
-    <!-- <hr /> -->
-    <!-- <TextDirective /> -->
-    <!-- <hr /> -->
-    <!-- <HtmlDirective /> -->
-    <!-- <hr />
-    <AttributeBinding /> -->
+    <!-- <AttributeBinding /> --> 
     <!-- <hr />-->
     <ExerciseEventVue /> 
     <ExerciseEventChildVue />
-    
+ 
   </main>
 </template>
 
