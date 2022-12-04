@@ -1,31 +1,18 @@
 <template>
   <div class="tweet">
-    <ProfileImage :image="props.tweet.user.image"
-   />
-
+  
+      <ProfileImage :image ="props.tweet.user.image"/>
+    
     <div class="body">
       <div class="top">
-        <span class="user">
-          <span class="name">{{props.tweet.user.name}}</span>
-          <span class="handle">@{{props.tweet.user.handle}}</span>
-        </span>
+        <User :userData="props.tweet.user"/>
 
-        <span class="timestamp">{{props.tweet.user.timestamp}}</span>
+       <Timestamp :timestamp="props.tweet.timestamp"/>
       </div>
 
       <Message :message ="props.tweet.message"/>
-
-      <p class="message">
-       {{props.tweet.message}}
-      </p>
-
-      <div class="actions">
-        <!-- Font Awesome icons -->
-        <i class="far fa-comment"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="far fa-heart"></i>
-        <i class="fas fa-share"></i>
-      </div>
+      <Action />
+     
     </div>
 
     <i class="fas fa-ellipsis-h"></i>
@@ -33,12 +20,12 @@
 </template>
 
 <script setup>
-//Importar componentes
-import ProfileImageVue from './ProfileImage.vue';
-import UserVue from './User.vue';
-import TimestampVue from './Timestamp.vue';
-import ActionsVue from './Actions.vue';
-import MessageVue from './Message.vue';
+//Importar componentes que usamos en Tweet.vue
+import ProfileImage from './ProfileImage.vue';
+import User from './User.vue';
+import Timestamp from './Timestamp.vue';
+import Actions from './Actions.vue';
+import Message from './Message.vue';
 //Definir props que vienen de componente padre App.vue
 const props = defineProps({
   tweet: Object,

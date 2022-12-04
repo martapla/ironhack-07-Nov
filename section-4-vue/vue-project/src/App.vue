@@ -25,14 +25,15 @@ import ExerciseEventChildVue from "./components/vueBasics/ExerciseEventChild.vue
       <HelloWorld msg="Vue Lessons" />
     </div>
   </header>
-
-  <main>
+<main>
+ 
     <!-- <AttributeBinding /> --> 
     <!-- <hr />-->
-    <ExerciseEventVue /> 
-    <ExerciseEventChildVue />
+    <ExerciseSlotVue > Slot Lesson </ExerciseSlotVue>
+   
+   <ExerciseSlot2Vue >Slot Button</ExerciseSlot2Vue >
+   </main>
  
-  </main>
 </template>
 
 <style scoped>

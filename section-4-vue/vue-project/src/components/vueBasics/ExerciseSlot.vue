@@ -4,8 +4,14 @@ El segundo componente debe tener 2 slots. Uno en un div y el otro formando parte
 
 
 <template>
-  
-
+  <div>
+    <p> <slot/> </p>
+  </div>
+  <ol>
+    <li><slot/></li>
+    <li><slot/></li>
+    <li><slot/></li>
+  </ol>
 </template>
 
 <script setup>

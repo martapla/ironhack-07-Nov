@@ -1,10 +1,9 @@
 <template>
-  <img
-  :src="props.image"
-  class ="profile"
-  alt = "profile"
-
-  />
+ <img
+      :src="props.image"
+      className="profile"
+      alt="profile"
+    />
 </template>
 
 <script setup>
